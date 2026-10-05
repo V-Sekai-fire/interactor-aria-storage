@@ -1,20 +1,17 @@
-# AriaStorage
+# interactor-aria-storage
 
-**TODO: Add description**
+An Elixir library for content-defined chunk storage that reads and writes the casync and desync chunk-store format.
 
-## Installation
+## What it is for
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `aria_storage` to your list of dependencies in `mix.exs`:
+It splits a file into content-defined chunks, stores each one compressed under its hash, and writes the index that reassembles the file, in the layout a desync store also reads. Chunks go to a local directory or to an object-storage backend. `lib/README.md` describes the modules.
 
-```elixir
-def deps do
-  [
-    {:aria_storage, "~> 0.1.0"}
-  ]
-end
+## Build
+
+```sh
+mix test
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/aria_storage>.
+## Licence
+
+MIT, as the SPDX headers state. There is no licence file. The vendored desync source under `thirdparty/` keeps its own BSD-3-Clause licence.
