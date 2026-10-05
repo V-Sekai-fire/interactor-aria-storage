@@ -9,6 +9,7 @@ It splits a file into content-defined chunks, stores each one compressed under i
 ## Build
 
 ```sh
+mix deps.get
 mix test
 ```
 
