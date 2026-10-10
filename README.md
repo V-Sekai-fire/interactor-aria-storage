@@ -15,4 +15,4 @@ mix test
 
 ## Licence
 
-MIT, as the SPDX headers state. There is no licence file. The vendored desync source under `thirdparty/` keeps its own BSD-3-Clause licence.
+MIT. See [LICENSE](LICENSE). The vendored desync source under `thirdparty/` keeps its own BSD-3-Clause licence.
